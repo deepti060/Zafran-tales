@@ -1,0 +1,121 @@
+:root {
+  --primary: #ff007a;
+  --dark: #1a1a1a;
+  --gray: #666;
+  --light-gray: #f9f9f9;
+  --transition: 0.3s ease;
+}
+
+.career-container {
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.career-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.career-header h1 {
+  font-size: 36px;
+  color: var(--dark);
+}
+
+.career-header p {
+  font-size: 16px;
+  color: var(--gray);
+}
+
+/* Job List Styles */
+.job-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-bottom: 60px;
+}
+
+.job-card {
+  background-color: var(--light-gray);
+  border-radius: 12px;
+  padding: 20px;
+  transition: var(--transition);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.job-card:hover {
+  border-left: 5px solid var(--primary);
+  background-color: #fff;
+}
+
+.job-card h3 {
+  color: var(--primary);
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
+.job-card h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.job-card p {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+/* Application Form Styles */
+.application-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.application-form h2 {
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.application-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.application-form button {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.application-form button:hover {
+  background-color: #cc0063;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .career-header h1 {
+    font-size: 28px;
+  }
+
+  .application-form {
+    padding: 20px;
+  }
+}

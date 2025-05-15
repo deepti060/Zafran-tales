@@ -1,0 +1,147 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 100px 50px 0;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  transition: background 0.5s ease-in-out;
+  text-align: left;
+}
+
+.badge {
+  background-color: #ff007a;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero .highlight {
+  color: #ff007a;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.get-started,
+.learn-more {
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.get-started {
+  background-color: #ff007a;
+  color: white;
+}
+
+.get-started:hover {
+  background-color: #e6006b;
+}
+
+.learn-more {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.learn-more:hover {
+  background-color: white;
+  color: #ff007a;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 80px 40px 0;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    align-items: center;
+    text-align: center;
+    padding: 60px 30px 0;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    max-width: 90%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 20px 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .get-started,
+  .learn-more {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
